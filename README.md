@@ -1,2 +1,2 @@
 # DeluxerPanda.se
-Detta är min Hemsida helt gjort i html och css
+This is my website completely made in html and css
