@@ -15,7 +15,7 @@
         height: 150px;
         justify-content: flex-end;
         align-items: flex-end;
-        background: url("/banner.jpg") no-repeat center 35%;
+        background: url("banner.jpg") no-repeat center 35%;
         background-size: cover;
         padding: 1.6rem;}
      
