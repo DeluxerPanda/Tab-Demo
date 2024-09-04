@@ -8,17 +8,18 @@
         background-repeat: no-repeat;
         background-color:rgba(40,40,40,1);}
         
-        /*content boxes*/    
-        .header{/* Banner */    
-        flex-basis: 16vw;
-        display: flex;
-        height: 150px;
-        justify-content: flex-end;
-        align-items: flex-end;
-        background: url("banner.jpg") no-repeat center 35%;
-        background-size: cover;
-        padding: 1.6rem;}
+        .boby {
+        width: 100%;
+        padding: 20px;
+        order: 1;
+        display: none; 
+        background-color: #efefef;}
+
+
+        .menu-box input[type='radio']:checked + label + .boby {display: block;}
      
+        .menu-box input[type="radio"]:checked + label {background: #555; color: #ffff;}
+
         .menu-box {
         margin-top: 1%;
         display: flex;
@@ -36,17 +37,6 @@
         background-color: gray;
         color: white}
      
-        .menu-box .boby {
-        width: 100%;
-        padding: 20px;
-        order: 1;
-        display: none; 
-        background-color: #efefef;}
-     
-        .menu-box input[type='radio']:checked + label + .boby {display: block;}
-     
-        .menu-box input[type="radio"]:checked + label {background: #555; color: #ffff;}
-     
         .header, .menu-box, .body{
         margin-left: 10%;
         margin-right: 10%;
@@ -55,24 +45,3 @@
         /*Text*/
         .center-text {text-align: center;}
         
-        /* Style Responsiv start*/
-        @-o-viewport{
-        zoom: 1.0;
-        width: extend-to-zoom;}
-
-        @-ms-viewport{
-        width: extend-to-zoom;
-        zoom: 1.0;}
-
-        /* Extra small devices (phones, 600px and down) */
-        @media only screen and (max-width: 600px) {
-        /*Text centerd*/
-        .center p{
-        font-size: 12px;}
-
-        /*content boxes*/
-        .header, .menu-box, .body{
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-bottom: 0%;}
-        }
